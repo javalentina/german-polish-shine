@@ -2,7 +2,10 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+// Inline VisuallyHidden to avoid extra dependency
+const VisuallyHidden = ({ children }: { children: React.ReactNode }) => (
+  <span className="sr-only">{children}</span>
+);
 
 const NavMenu = () => {
   const { t } = useLanguage();
