@@ -1,5 +1,6 @@
 import heroPiano from "@/assets/hero-piano.jpg";
 import { useLanguage, Language } from "@/contexts/LanguageContext";
+import NavMenu from "@/components/NavMenu";
 
 const HeroSection = () => {
   const { lang, setLang, t } = useLanguage();
@@ -35,6 +36,10 @@ const HeroSection = () => {
             {t("hero.concerts")}
           </a>
         </div>
+      </div>
+
+      <div className="absolute left-6 top-6 z-20 animate-fade-in">
+        <NavMenu />
       </div>
 
       <div className="absolute right-6 top-6 z-20 flex gap-4 animate-fade-in delay-700">
