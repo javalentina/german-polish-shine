@@ -9,6 +9,14 @@ interface LanguageContextType {
 }
 
 const translations: Record<string, Record<Language, string>> = {
+  // Nav
+  "nav.biography": { de: "Biographie", en: "Biography" },
+  "nav.concerts": { de: "Konzerte", en: "Concerts" },
+  "nav.videos": { de: "Aufnahmen", en: "Recordings" },
+  "nav.projects": { de: "Projekte", en: "Projects" },
+  "nav.contact": { de: "Kontakt", en: "Contact" },
+  "nav.follow": { de: "Folgen", en: "Follow" },
+
   // Hero
   "hero.biography": { de: "Biographie", en: "Biography" },
   "hero.concerts": { de: "Konzerte", en: "Concerts" },
