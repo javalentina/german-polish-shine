@@ -4,6 +4,7 @@ import ConcertsSection from "@/components/ConcertsSection";
 import VideosSection from "@/components/VideosSection";
 import GallerySection from "@/components/GallerySection";
 import ProjectsSection from "@/components/ProjectsSection";
+import PresentationSection from "@/components/PresentationSection";
 import FooterSection from "@/components/FooterSection";
 import TopNav from "@/components/TopNav";
 import SectionDivider from "@/components/SectionDivider";
@@ -14,6 +15,8 @@ const Index = () => {
       <TopNav />
       <HeroSection />
       <SectionDivider variant="ornament" />
+      <PresentationSection />
+      <SectionDivider variant="line" />
       <BiographySection />
       <SectionDivider variant="line" />
       <ConcertsSection />

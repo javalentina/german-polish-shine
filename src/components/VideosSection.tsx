@@ -16,7 +16,7 @@ const VideosSection = () => {
     <section className="bg-secondary/30 py-32 md:py-40">
       <div ref={ref} className="mx-auto max-w-6xl px-6">
         <div className={`mb-16 text-center ${isVisible ? "animate-reveal-up" : "opacity-0"}`}>
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">{t("videos.label")}</p>
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">{t("videos.label")}</p>
           <h2 className="font-display text-4xl font-light md:text-5xl">{t("videos.title")}</h2>
         </div>
 
@@ -33,9 +33,9 @@ const VideosSection = () => {
                   </div>
                 </div>
               </div>
-              <div className="p-5">
-                <p className="font-display text-lg font-light leading-snug">{video.title}</p>
-                <p className="font-body mt-2 text-xs text-muted-foreground tabular-nums">{video.duration}</p>
+              <div className="p-6">
+                <p className="font-display text-xl font-light leading-snug md:text-2xl">{video.title}</p>
+                <p className="font-body mt-3 text-sm text-foreground/65 tabular-nums">{video.duration}</p>
               </div>
             </a>
           ))}
@@ -43,7 +43,7 @@ const VideosSection = () => {
 
         <div className={`mt-12 text-center ${isVisible ? "animate-fade-in delay-700" : "opacity-0"}`}>
           <a href="https://m.youtube.com/@natalia_uchitel/videos" target="_blank" rel="noopener noreferrer"
-            className="font-body inline-block border-b border-primary/40 pb-1 text-xs tracking-[0.2em] uppercase text-primary transition-colors hover:border-primary">
+            className="font-body inline-block border-b border-primary/40 pb-1 text-sm tracking-[0.2em] uppercase text-primary transition-colors hover:border-primary">
             {t("videos.allOnYoutube")}
           </a>
         </div>

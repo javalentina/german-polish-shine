@@ -14,9 +14,9 @@ const BiographySection = () => {
             <img src={pianoHands} alt="Piano performance detail" className="w-full grayscale" loading="lazy" />
           </div>
           <div className={`${isVisible ? "animate-reveal-up delay-200" : "opacity-0"}`}>
-            <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-6">{t("bio.label")}</p>
-            <h2 className="font-display text-4xl font-light leading-[1.1] md:text-5xl text-balance mb-8">{t("bio.title")}</h2>
-            <div className="space-y-5 font-body text-sm leading-relaxed text-muted-foreground text-pretty">
+            <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-6">{t("bio.label")}</p>
+            <h2 className="font-display text-4xl font-light leading-[1.15] md:text-5xl text-balance mb-8">{t("bio.title")}</h2>
+            <div className="space-y-6 font-body text-lg leading-[1.8] text-foreground/85 text-pretty md:text-xl">
               <p>{t("bio.p1")}</p>
               <p>{t("bio.p2")}</p>
               <p>{t("bio.p3")}</p>
