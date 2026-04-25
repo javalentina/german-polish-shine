@@ -1,20 +1,8 @@
 import heroPiano from "@/assets/hero-piano.jpg";
-import { useLanguage, Language } from "@/contexts/LanguageContext";
-import NavMenu from "@/components/NavMenu";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
-  const { lang, setLang, t } = useLanguage();
-
-  const langOption = (code: Language, label: string) => (
-    <span
-      onClick={() => setLang(code)}
-      className={`font-body cursor-pointer text-xs tracking-[0.15em] uppercase transition-colors hover:text-primary ${
-        lang === code ? "text-foreground/60" : "text-foreground/40"
-      }`}
-    >
-      {label}
-    </span>
-  );
+  const { t } = useLanguage();
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -36,15 +24,6 @@ const HeroSection = () => {
             {t("hero.concerts")}
           </a>
         </div>
-      </div>
-
-      <div className="absolute left-6 top-6 z-20 animate-fade-in">
-        <NavMenu />
-      </div>
-
-      <div className="absolute right-6 top-6 z-20 flex gap-4 animate-fade-in delay-700">
-        {langOption("de", "DE")}
-        {langOption("en", "EN")}
       </div>
 
       <div className="absolute bottom-8 right-6 z-20 flex flex-col gap-4 animate-fade-in delay-700">
