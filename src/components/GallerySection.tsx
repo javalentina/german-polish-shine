@@ -22,7 +22,7 @@ const images: Img[] = [
 
 const GallerySection = () => {
   const { t } = useLanguage();
-  const ref = useScrollReveal();
+  const { ref } = useScrollReveal();
   const [active, setActive] = useState<number | null>(null);
 
   useEffect(() => {
