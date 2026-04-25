@@ -1,20 +1,8 @@
 import heroPiano from "@/assets/hero-piano.jpg";
-import { useLanguage, Language } from "@/contexts/LanguageContext";
-import NavMenu from "@/components/NavMenu";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
-  const { lang, setLang, t } = useLanguage();
-
-  const langOption = (code: Language, label: string) => (
-    <span
-      onClick={() => setLang(code)}
-      className={`font-body cursor-pointer text-xs tracking-[0.15em] uppercase transition-colors hover:text-primary ${
-        lang === code ? "text-foreground/60" : "text-foreground/40"
-      }`}
-    >
-      {label}
-    </span>
-  );
+  const { t } = useLanguage();
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
