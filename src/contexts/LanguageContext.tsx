@@ -45,22 +45,53 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Biography
   "bio.label": { de: "Biographie", en: "Biography" },
-  "bio.title": { de: "Konzertpianistin, Pädagogin & Projektleiterin", en: "Concert Pianist, Educator & Project Leader" },
-  "bio.p1": {
-    de: "Natalia Uchitel wurde am 8. Oktober 1996 geboren und begann ihre musikalische Ausbildung bereits im Alter von vier Jahren an der Spezialmusikschule des St. Petersburger Konservatoriums bei Marina Veniaminovna Wolf. Schon während ihrer Schulzeit entwickelte sie eigene Aufklärungsprojekte und nahm an Musikfestivals in Russland und im Ausland teil.",
-    en: "Natalia Uchitel was born on October 8, 1996, and began her musical education at the age of four at the Specialized Music School of the St. Petersburg Conservatory under Marina Veniaminovna Wolf. During her school years, she already developed her own educational projects and participated in music festivals in Russia and abroad.",
+  "bio.title": { de: "Eine Reise durch Klang & Lehre", en: "A Journey Through Sound & Teaching" },
+  "bio.lead": {
+    de: "Von einem vierjährigen Mädchen am Klavier in St. Petersburg zur international gefeierten Konzertpianistin, Pädagogin und Autorin — Natalias Weg ist eine fortwährende Hingabe an die Musik.",
+    en: "From a four-year-old girl at the piano in St. Petersburg to an internationally celebrated concert pianist, educator and author — Natalia's path is a continuing devotion to music.",
   },
-  "bio.p2": {
-    de: "Im Jahr 2019 schloss sie ihr Studium am St. Petersburger Konservatorium in der Klasse des namhaften Pianisten und Pädagogen Peter Laul ab. Sie nahm an Meisterkursen von Dmitry Bashkirov, Grigory Gruzman, Natalia Trull, Andrey Diev und vielen anderen teil.",
-    en: "In 2019, she graduated from the St. Petersburg Conservatory in the class of the renowned pianist and teacher Peter Laul. She participated in masterclasses by Dmitry Bashkirov, Grigory Gruzman, Natalia Trull, Andrey Diev, and many others.",
+  "bio.quote": {
+    de: "Musik ist für mich kein Beruf — sie ist die Sprache, in der ich am ehrlichsten denke.",
+    en: "Music isn't a profession to me — it's the language in which I think most honestly.",
   },
-  "bio.p3": {
-    de: "Sie ist Preisträgerin und Diplomandin internationaler Solo- und Kammermusikwettbewerbe. Natalia konzertiert erfolgreich weltweit, unter anderem in Deutschland, Italien, Israel, den USA, England, Estland, der Schweiz und Österreich. Ihr Repertoire umfasst sowohl Klassiker als auch Werke zeitgenössischer akademischer Komponisten. 2021 beendete sie ihre Aspirantur am St. Petersburger Konservatorium bei Inga Dzektser. Im Jahr 2025 schloss sie ihr Studium in der Klasse von Evgueni Sinaiski an der Folkwang Universität der Künste in Essen (Deutschland) ab.",
-    en: "She is a prize winner and diplomat of international solo and chamber music competitions. Natalia performs successfully worldwide, including in Germany, Italy, Israel, the USA, England, Estonia, Switzerland, and Austria. Her repertoire includes both classics and works by contemporary academic composers. In 2021, she completed her post-graduate studies at the St. Petersburg Conservatory under Inga Dzektser. In 2025, she graduated from the class of Evgueni Sinaiski at the Folkwang University of the Arts in Essen (Germany).",
+  "bio.chapter.early": { de: "Frühe Jahre", en: "Early Years" },
+  "bio.chapter.early.text": {
+    de: "Geboren am 8. Oktober 1996. Mit vier Jahren begann sie ihre Ausbildung an der Spezialmusikschule des St. Petersburger Konservatoriums bei Marina Veniaminovna Wolf. Schon als Schülerin entwickelte sie eigene Aufklärungsprojekte und nahm an Festivals in Russland und im Ausland teil.",
+    en: "Born October 8, 1996. At the age of four she began her studies at the Specialized Music School of the St. Petersburg Conservatory under Marina Veniaminovna Wolf. Already as a pupil she created her own educational projects and performed at festivals in Russia and abroad.",
   },
-  "bio.p4": {
-    de: "Heute widmet sie sich intensiv der Kammermusik und tritt weiterhin als Solistin auf. Zudem ist sie als Korrepetitorin bei verschiedenen Meisterkursen und Festivals tätig. Neben ihrer Konzerttätigkeit entwickelt Natalia eigene Projekte und tritt als Dozentin auf. Im Jahr 2022 startete sie ihren Podcast und ihre YouTube-Show „Lehrerzimmer auf der Veranda“ (Uchitelskaya na verande), in der sie gemeinsam mit ihren Eltern Themen rund um Kunst und Pädagogik diskutiert. Natalia ist zudem als Autorin erfolgreich: 2020: Veröffentlichung des Buches „Lehrer-Schüler: Wie man das selbstständige Musizieren lieben lernt“, das in Russland in einer Auflage von über 1.000 Exemplaren verkauft wurde. 2024: Veröffentlichung des Buches „Musikschule ohne Trauma“.",
-    en: "Today, she is deeply dedicated to chamber music and continues to perform as a soloist. She also works as an accompanist at various masterclasses and festivals. Alongside her concert activities, Natalia develops her own projects and appears as a lecturer. In 2022, she launched her podcast and YouTube show \"Teacher's Lounge on the Veranda\" (Uchitelskaya na verande), where she discusses art and pedagogy with her parents. Natalia is also a successful author: in 2020, she published the book \"Teacher-Student: How to learn to love independent music-making,\" which sold over 1,000 copies in Russia. In 2024, she published the book \"Music School Without Trauma.\"",
+  "bio.chapter.studies": { de: "Studium & Meisterklassen", en: "Studies & Masterclasses" },
+  "bio.chapter.studies.text": {
+    de: "2019 schloss sie ihr Studium am St. Petersburger Konservatorium in der Klasse von Peter Laul ab. 2021 beendete sie dort ihre Aspirantur bei Inga Dzektser. 2025 absolvierte sie die Folkwang Universität der Künste in Essen bei Evgueni Sinaiski. Meisterkurse u.a. bei Dmitry Bashkirov, Grigory Gruzman, Natalia Trull und Andrey Diev.",
+    en: "In 2019 she graduated from the St. Petersburg Conservatory in the class of Peter Laul. In 2021 she completed her post-graduate studies there with Inga Dzektser. In 2025 she graduated from the Folkwang University of the Arts in Essen under Evgueni Sinaiski. Masterclasses with Dmitry Bashkirov, Grigory Gruzman, Natalia Trull, Andrey Diev and others.",
+  },
+  "bio.chapter.career": { de: "Internationale Karriere", en: "International Career" },
+  "bio.chapter.career.text": {
+    de: "Preisträgerin und Diplomandin internationaler Solo- und Kammermusikwettbewerbe. Konzerte in Deutschland, Italien, Israel, den USA, England, Estland, der Schweiz und Österreich. Ihr Repertoire reicht von den Klassikern bis zu zeitgenössischen akademischen Komponisten. Heute widmet sie sich intensiv der Kammermusik und arbeitet als Korrepetitorin bei Meisterkursen und Festivals.",
+    en: "Prize winner and diplomat of international solo and chamber music competitions. Concerts in Germany, Italy, Israel, the USA, England, Estonia, Switzerland and Austria. Her repertoire spans the classics through contemporary academic composers. Today she devotes herself to chamber music and works as accompanist at masterclasses and festivals.",
+  },
+  "bio.chapter.beyond": { de: "Mehr als die Bühne", en: "Beyond the Stage" },
+  "bio.chapter.beyond.text": {
+    de: "Seit 2022 produziert Natalia ihren Podcast und die YouTube-Show „Lehrerzimmer auf der Veranda“ (Uchitelskaya na verande) — Gespräche mit ihren Eltern über Kunst und Pädagogik. Sie tritt regelmäßig als Dozentin auf und entwickelt eigene Bildungsprojekte.",
+    en: "Since 2022 Natalia has produced her podcast and YouTube show \"Teacher's Lounge on the Veranda\" (Uchitelskaya na verande) — conversations with her parents on art and pedagogy. She regularly appears as a lecturer and develops her own educational projects.",
+  },
+  "bio.books.label": { de: "Veröffentlichungen", en: "Publications" },
+  "bio.book1.year": { de: "2020", en: "2020" },
+  "bio.book1.title": {
+    de: "Lehrer-Schüler",
+    en: "Teacher-Student",
+  },
+  "bio.book1.desc": {
+    de: "„Wie man das selbstständige Musizieren lieben lernt." Über 1.000 verkaufte Exemplare in Russland.",
+    en: "\"How to learn to love independent music-making.\" Over 1,000 copies sold in Russia.",
+  },
+  "bio.book2.year": { de: "2024", en: "2024" },
+  "bio.book2.title": {
+    de: "Musikschule ohne Trauma",
+    en: "Music School Without Trauma",
+  },
+  "bio.book2.desc": {
+    de: "Ein neuer Blick auf die musikalische Ausbildung — empathisch, modern, befreiend.",
+    en: "A fresh look at music education — empathetic, modern, liberating.",
   },
 
   // Concerts
