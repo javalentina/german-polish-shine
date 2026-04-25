@@ -5,15 +5,23 @@ import VideosSection from "@/components/VideosSection";
 import GallerySection from "@/components/GallerySection";
 import ProjectsSection from "@/components/ProjectsSection";
 import FooterSection from "@/components/FooterSection";
+import TopNav from "@/components/TopNav";
+import SectionDivider from "@/components/SectionDivider";
 
 const Index = () => {
   return (
     <main className="overflow-x-hidden">
+      <TopNav />
       <HeroSection />
+      <SectionDivider variant="ornament" />
       <BiographySection />
+      <SectionDivider variant="line" />
       <ConcertsSection />
+      <SectionDivider variant="ornament" />
       <VideosSection />
+      <SectionDivider variant="line" />
       <GallerySection />
+      <SectionDivider variant="ornament" />
       <ProjectsSection />
       <FooterSection />
     </main>
