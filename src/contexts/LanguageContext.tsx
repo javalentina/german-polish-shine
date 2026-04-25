@@ -14,8 +14,17 @@ const translations: Record<string, Record<Language, string>> = {
   "nav.concerts": { de: "Konzerte", en: "Concerts" },
   "nav.videos": { de: "Aufnahmen", en: "Recordings" },
   "nav.projects": { de: "Projekte", en: "Projects" },
+  "nav.gallery": { de: "Galerie", en: "Gallery" },
   "nav.contact": { de: "Kontakt", en: "Contact" },
   "nav.follow": { de: "Folgen", en: "Follow" },
+
+  // Gallery
+  "gallery.label": { de: "Galerie", en: "Gallery" },
+  "gallery.title": { de: "In Bildern", en: "In Pictures" },
+  "gallery.subtitle": {
+    de: "Momente von der Bühne, aus dem Studio und hinter den Kulissen — eine visuelle Reise durch Klang und Stille.",
+    en: "Moments from the stage, the studio and behind the scenes — a visual journey through sound and silence.",
+  },
 
   // Hero
   "hero.biography": { de: "Biographie", en: "Biography" },
