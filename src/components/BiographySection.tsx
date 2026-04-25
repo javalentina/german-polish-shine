@@ -20,6 +20,7 @@ const BiographySection = () => {
               <p>{t("bio.p1")}</p>
               <p>{t("bio.p2")}</p>
               <p>{t("bio.p3")}</p>
+              <p>{t("bio.p4")}</p>
             </div>
           </div>
         </div>
