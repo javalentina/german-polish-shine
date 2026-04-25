@@ -15,6 +15,7 @@ const NavMenu = () => {
     { href: "#biography", key: "nav.biography" },
     { href: "#concerts", key: "nav.concerts" },
     { href: "#videos", key: "nav.videos" },
+    { href: "#gallery", key: "nav.gallery" },
     { href: "#projects", key: "nav.projects" },
     { href: "#contact", key: "nav.contact" },
   ];
