@@ -12,6 +12,7 @@ const NavMenu = () => {
   const [open, setOpen] = useState(false);
 
   const links = [
+    { href: "#presentation", key: "nav.presentation" },
     { href: "#biography", key: "nav.biography" },
     { href: "#concerts", key: "nav.concerts" },
     { href: "#videos", key: "nav.videos" },

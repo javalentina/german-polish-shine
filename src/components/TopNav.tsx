@@ -3,6 +3,7 @@ import { useLanguage, Language } from "@/contexts/LanguageContext";
 import NavMenu from "@/components/NavMenu";
 
 const sections = [
+  { id: "presentation", key: "nav.presentation" },
   { id: "biography", key: "nav.biography" },
   { id: "concerts", key: "nav.concerts" },
   { id: "videos", key: "nav.videos" },
