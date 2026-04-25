@@ -17,6 +17,18 @@ const translations: Record<string, Record<Language, string>> = {
   "nav.gallery": { de: "Galerie", en: "Gallery" },
   "nav.contact": { de: "Kontakt", en: "Contact" },
   "nav.follow": { de: "Folgen", en: "Follow" },
+  "nav.presentation": { de: "Über mich", en: "About Me" },
+
+  // Presentation video
+  "presentation.label": { de: "Videopräsentation", en: "Video Presentation" },
+  "presentation.title": { de: "Lernen Sie Natalia Uchitel kennen", en: "Meet Natalia Uchitel" },
+  "presentation.subtitle": {
+    de: "Eine persönliche Einladung in die musikalische Welt der Pianistin — über ihren Werdegang, ihre Projekte und ihre Leidenschaft für klassische Musik.",
+    en: "A personal invitation into the pianist's musical world — her journey, her projects, and her passion for classical music.",
+  },
+  "presentation.watch": { de: "Video ansehen", en: "Watch Video" },
+  "presentation.play": { de: "Video abspielen", en: "Play video" },
+  "presentation.cardTitle": { de: "Natalia Uchitel — Videopräsentation", en: "Natalia Uchitel — Video Presentation" },
 
   // Gallery
   "gallery.label": { de: "Galerie", en: "Gallery" },
