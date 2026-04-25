@@ -81,7 +81,7 @@ const translations: Record<string, Record<Language, string>> = {
     en: "Teacher-Student",
   },
   "bio.book1.desc": {
-    de: "„Wie man das selbstständige Musizieren lieben lernt." Über 1.000 verkaufte Exemplare in Russland.",
+    de: "„Wie man das selbstständige Musizieren lieben lernt.“ Über 1.000 verkaufte Exemplare in Russland.",
     en: "\"How to learn to love independent music-making.\" Over 1,000 copies sold in Russia.",
   },
   "bio.book2.year": { de: "2024", en: "2024" },
