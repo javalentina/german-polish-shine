@@ -22,7 +22,7 @@
     --secondary-foreground: 40 20% 85%;
 
     --muted: 0 0% 14%;
-    --muted-foreground: 40 10% 55%;
+    --muted-foreground: 40 15% 72%;
 
     --accent: 38 35% 58%;
     --accent-foreground: 0 0% 4%;
@@ -55,6 +55,13 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p {
+    line-height: 1.75;
   }
 
   h1, h2, h3, h4, h5, h6 {
