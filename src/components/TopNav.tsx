@@ -5,6 +5,7 @@ import NavMenu from "@/components/NavMenu";
 const sections = [
   { id: "presentation", key: "nav.presentation" },
   { id: "biography", key: "nav.biography" },
+  { id: "repertoire", key: "nav.repertoire" },
   { id: "concerts", key: "nav.concerts" },
   { id: "videos", key: "nav.videos" },
   { id: "gallery", key: "nav.gallery" },

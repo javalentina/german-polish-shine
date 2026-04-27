@@ -11,7 +11,20 @@ interface LanguageContextType {
 const translations: Record<string, Record<Language, string>> = {
   // Nav
   "nav.biography": { de: "Biographie", en: "Biography" },
+  "nav.repertoire": { de: "Repertoire", en: "Repertoire" },
   "nav.concerts": { de: "Konzerte", en: "Concerts" },
+  "rep.label": { de: "Repertoire", en: "Repertoire" },
+  "rep.title": {
+    de: "Ein Repertoire von Bach bis zur Gegenwart",
+    en: "A Repertoire from Bach to the Present",
+  },
+  "rep.subtitle": {
+    de: "Eine Auswahl an Solo- und Kammermusikwerken aus drei Jahrhunderten — vom Barock über die Romantik bis zu zeitgenössischen Komponisten.",
+    en: "A selection of solo and chamber works spanning three centuries — from the Baroque through Romanticism to contemporary composers.",
+  },
+  "rep.tab.solo": { de: "Solo", en: "Solo" },
+  "rep.tab.chamber": { de: "Kammermusik", en: "Chamber Music" },
+  "rep.composers": { de: "Komponisten", en: "Composers" },
   "nav.videos": { de: "Aufnahmen", en: "Recordings" },
   "nav.projects": { de: "Projekte", en: "Projects" },
   "nav.gallery": { de: "Galerie", en: "Gallery" },

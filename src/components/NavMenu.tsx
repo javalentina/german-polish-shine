@@ -14,6 +14,7 @@ const NavMenu = () => {
   const links = [
     { href: "#presentation", key: "nav.presentation" },
     { href: "#biography", key: "nav.biography" },
+    { href: "#repertoire", key: "nav.repertoire" },
     { href: "#concerts", key: "nav.concerts" },
     { href: "#videos", key: "nav.videos" },
     { href: "#gallery", key: "nav.gallery" },
