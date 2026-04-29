@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import HeroSection from "@/components/HeroSection";
 import BiographySection from "@/components/BiographySection";
 import RepertoireSection from "@/components/RepertoireSection";
@@ -11,6 +13,17 @@ import TopNav from "@/components/TopNav";
 import SectionDivider from "@/components/SectionDivider";
 
 const Index = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace("#", "");
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [hash]);
+
   return (
     <main className="overflow-x-hidden">
       <TopNav />
