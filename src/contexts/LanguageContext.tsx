@@ -109,7 +109,20 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Concerts
   "concerts.label": { de: "Konzerte", en: "Concerts" },
-  "concerts.title": { de: "Kommende Auftritte", en: "Upcoming Performances" },
+  "concerts.title": { de: "Auftritte", en: "Performances" },
+  "concerts.upcoming": { de: "Kommende Auftritte", en: "Upcoming Performances" },
+  "concerts.past": { de: "Vergangene Konzerte", en: "Past Concerts" },
+  "concerts.show": { de: "Anzeigen", en: "Show" },
+  "concerts.hide": { de: "Verbergen", en: "Hide" },
+
+  // Concert detail
+  "concert.notFound": { de: "Konzert nicht gefunden", en: "Concert not found" },
+  "concert.back": { de: "Zur Startseite", en: "Back to homepage" },
+  "concert.backToList": { de: "Alle Konzerte", en: "All concerts" },
+  "concert.program": { de: "Programm", en: "Program" },
+  "concert.programTitle": { de: "Werke des Abends", en: "Works of the evening" },
+  "concert.impressions": { de: "Eindrücke", en: "Impressions" },
+  "concert.impressionsTitle": { de: "Bilder & Atmosphäre", en: "Images & Atmosphere" },
 
   // Videos
   "videos.label": { de: "Aufnahmen", en: "Recordings" },
