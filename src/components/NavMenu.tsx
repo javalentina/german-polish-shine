@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -10,6 +11,8 @@ const VisuallyHidden = ({ children }: { children: React.ReactNode }) => (
 const NavMenu = () => {
   const { t } = useLanguage();
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const links = [
     { href: "#presentation", key: "nav.presentation" },
@@ -25,10 +28,14 @@ const NavMenu = () => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setOpen(false);
-    setTimeout(() => {
-      const el = document.querySelector(href);
-      el?.scrollIntoView({ behavior: "smooth" });
-    }, 250);
+    const id = href.replace("#", "");
+    if (location.pathname === "/") {
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }, 250);
+    } else {
+      setTimeout(() => navigate(`/#${id}`), 250);
+    }
   };
 
   return (

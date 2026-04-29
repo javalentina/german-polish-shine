@@ -109,7 +109,20 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Concerts
   "concerts.label": { de: "Konzerte", en: "Concerts" },
-  "concerts.title": { de: "Kommende Auftritte", en: "Upcoming Performances" },
+  "concerts.title": { de: "Auftritte", en: "Performances" },
+  "concerts.upcoming": { de: "Kommende Auftritte", en: "Upcoming Performances" },
+  "concerts.past": { de: "Vergangene Konzerte", en: "Past Concerts" },
+  "concerts.show": { de: "Anzeigen", en: "Show" },
+  "concerts.hide": { de: "Verbergen", en: "Hide" },
+
+  // Concert detail
+  "concert.notFound": { de: "Konzert nicht gefunden", en: "Concert not found" },
+  "concert.back": { de: "Zur Startseite", en: "Back to homepage" },
+  "concert.backToList": { de: "Alle Konzerte", en: "All concerts" },
+  "concert.program": { de: "Programm", en: "Program" },
+  "concert.programTitle": { de: "Werke des Abends", en: "Works of the evening" },
+  "concert.impressions": { de: "Eindrücke", en: "Impressions" },
+  "concert.impressionsTitle": { de: "Bilder & Atmosphäre", en: "Images & Atmosphere" },
 
   // Videos
   "videos.label": { de: "Aufnahmen", en: "Recordings" },
@@ -146,6 +159,61 @@ const translations: Record<string, Record<Language, string>> = {
     en: "Available on Yandex.Music, Apple Podcasts, Google Podcasts, Castbox, Soundstream, and other platforms.",
   },
   "projects.podcast.listen": { de: "Auf YouTube anhören →", en: "Listen on YouTube →" },
+  "projects.readMore": { de: "Mehr erfahren →", en: "Learn more →" },
+
+  // Quiet Music project page
+  "qm.label": { de: "Projekt · Musik-Siesta", en: "Project · Music Siesta" },
+  "qm.title": {
+    de: "Die Kunst, sich selbst und die Musik zu hören",
+    en: "The Art of Listening to Yourself and to Music",
+  },
+  "qm.subtitle": {
+    de: "Ein Programm, das ein klassisches Konzert mit der Praxis verbindet, in Kontakt mit dem eigenen Körper zu kommen und ihn zu entspannen.",
+    en: "A program that combines a classical concert with the practice of connecting with the body and letting it rest.",
+  },
+  "qm.concept.label": { de: "Konzept", en: "Concept" },
+  "qm.concept.title": { de: "Eine Pause für Körper und Gehör", en: "A pause for body and hearing" },
+  "qm.concept.p1": {
+    de: "In unserer hektischen Welt müssen wir alle riesige Informationsströme, kreisende Gedanken und latente Unruhe bewältigen. Sich auf etwas einzulassen, das Verlangsamung verlangt, fällt zunehmend schwer.",
+    en: "In our restless world, we all have to navigate vast streams of information, racing thoughts and quiet anxiety. Settling into something that asks for slowness has become genuinely difficult.",
+  },
+  "qm.concept.p2": {
+    de: "Auf der einen Seite erwartet Sie ein echtes Konzert klassischer Musik — gespielt von Preisträgern internationaler Wettbewerbe, mit einem Programm, das eigens für diesen Abend zusammengestellt wurde.",
+    en: "On one hand, a real classical concert awaits you — performed by prize-winners of international competitions, with a program curated specifically for this evening.",
+  },
+  "qm.concept.p3": {
+    de: "Auf der anderen Seite laden wir Sie in einen klassischen Saal ein, in dem normalerweise stilles, aufrechtes Zuhören erwartet wird — und bitten Sie, sich auf Kissen zu legen, in eine Decke zu hüllen und der Musik liegend zu lauschen, begleitet von einer ruhigen, entspannenden Bewegungspraxis.",
+    en: "On the other, we invite you into an academic concert hall — where one normally sits in formal silence — and ask you instead to lie down on cushions, wrap yourself in a blanket, and listen while a calm, restorative movement practice unfolds.",
+  },
+  "qm.flow.label": { de: "Ablauf", en: "How it unfolds" },
+  "qm.flow.title": { de: "Wie der Abend verläuft", en: "What the evening looks like" },
+  "qm.flow.step1.title": { de: "Ankommen", en: "Arrival" },
+  "qm.flow.step1.text": {
+    de: "Wir versammeln uns in kleiner Runde und sprechen darüber, warum bewusstes Zuhören klassischer Musik so schwerfällt.",
+    en: "We gather in a small group and talk about why it can be hard to listen to classical music with full attention.",
+  },
+  "qm.flow.step2.title": { de: "Hineinhorchen", en: "Listening in" },
+  "qm.flow.step2.text": {
+    de: "Sie legen sich auf Kissen, decken sich zu und folgen kleinen Übungen, die helfen, in den Hörprozess einzutauchen.",
+    en: "You lie down on cushions, cover yourself with a blanket, and follow gentle exercises that draw you into the music.",
+  },
+  "qm.flow.step3.title": { de: "Bewegen & Loslassen", en: "Moving & releasing" },
+  "qm.flow.step3.text": {
+    de: "Eine sanfte Gymnastik unter Live-Musik schließt den Abend — sicher, achtsam, im eigenen Tempo.",
+    en: "A soft, mindful gymnastics session under live music closes the evening — safe, attentive, at your own pace.",
+  },
+  "qm.duration": { de: "Dauer", en: "Duration" },
+  "qm.hours": { de: "Stunden", en: "hours" },
+  "qm.format": { de: "Format", en: "Format" },
+  "qm.formatValue": { de: "Kleine Gruppe", en: "Small group" },
+  "qm.partner": { de: "Partner", en: "Partner" },
+  "qm.performers.label": { de: "Mitwirkende", en: "Performers" },
+  "qm.performers.title": { de: "Wer Sie begleitet", en: "Who guides the evening" },
+  "qm.reviews.label": { de: "Stimmen", en: "Voices" },
+  "qm.reviews.title": { de: "Was Gäste erlebt haben", en: "What guests have experienced" },
+  "qm.gallery.label": { de: "Galerie", en: "Gallery" },
+  "qm.gallery.title": { de: "Eindrücke aus dem Saal", en: "Impressions from the hall" },
+  "qm.back": { de: "Zurück zu allen Projekten", en: "Back to all projects" },
 
   // Footer
   "footer.rights": { de: "Alle Rechte vorbehalten.", en: "All rights reserved." },

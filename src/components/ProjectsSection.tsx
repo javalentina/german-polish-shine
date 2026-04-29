@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import concertHall from "@/assets/concert-hall.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -6,15 +7,15 @@ const ProjectsSection = () => {
   const { ref, isVisible } = useScrollReveal();
   const { t } = useLanguage();
 
-  const projects = [
+  const projects: { title: string; description: string; href?: string }[] = [
     { title: t("projects.mozart.title"), description: t("projects.mozart.desc") },
     { title: t("projects.listening.title"), description: t("projects.listening.desc") },
-    { title: t("projects.siesta.title"), description: t("projects.siesta.desc") },
+    { title: t("projects.siesta.title"), description: t("projects.siesta.desc"), href: "/projects/quiet-music" },
     { title: t("projects.wachbrief.title"), description: t("projects.wachbrief.desc") },
   ];
 
   return (
-    <section className="relative py-32 md:py-40 overflow-hidden">
+    <section id="projects" className="relative py-32 md:py-40 overflow-hidden">
       <div className="absolute inset-0">
         <img src={concertHall} alt="" className="h-full w-full object-cover opacity-15" loading="lazy" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
@@ -27,13 +28,26 @@ const ProjectsSection = () => {
         </div>
 
         <div className="grid gap-px bg-border sm:grid-cols-2">
-          {projects.map((project, i) => (
-            <div key={i} className={`bg-background p-8 md:p-10 transition-colors hover:bg-secondary/30 ${isVisible ? "animate-reveal-up" : "opacity-0"}`}
-              style={isVisible ? { animationDelay: `${200 + i * 100}ms` } : undefined}>
-              <h3 className="font-display text-2xl font-light mb-4 md:text-3xl">{project.title}</h3>
-              <p className="font-body text-base leading-[1.75] text-foreground/80 text-pretty md:text-lg">{project.description}</p>
-            </div>
-          ))}
+          {projects.map((project, i) => {
+            const inner = (
+              <>
+                <h3 className="font-display text-2xl font-light mb-4 md:text-3xl group-hover:text-primary transition-colors">{project.title}</h3>
+                <p className="font-body text-base leading-[1.75] text-foreground/80 text-pretty md:text-lg">{project.description}</p>
+                {project.href && (
+                  <span className="font-body mt-6 inline-block text-[11px] tracking-[0.3em] uppercase text-primary border-b border-primary/40 pb-1">
+                    {t("projects.readMore")}
+                  </span>
+                )}
+              </>
+            );
+            const cls = `group block bg-background p-8 md:p-10 transition-colors hover:bg-secondary/30 ${isVisible ? "animate-reveal-up" : "opacity-0"}`;
+            const style = isVisible ? { animationDelay: `${200 + i * 100}ms` } : undefined;
+            return project.href ? (
+              <Link key={i} to={project.href} className={cls} style={style}>{inner}</Link>
+            ) : (
+              <div key={i} className={cls} style={style}>{inner}</div>
+            );
+          })}
         </div>
 
         <div className={`mt-16 border border-border p-8 md:p-12 ${isVisible ? "animate-reveal-up delay-600" : "opacity-0"}`}>

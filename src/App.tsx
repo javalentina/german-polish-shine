@@ -6,6 +6,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import ConcertDetailPage from "./pages/ConcertDetailPage.tsx";
+import QuietMusicProjectPage from "./pages/QuietMusicProjectPage.tsx";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +20,8 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/concerts/:id" element={<ConcertDetailPage />} />
+            <Route path="/projects/quiet-music" element={<QuietMusicProjectPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

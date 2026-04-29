@@ -13,7 +13,7 @@ const VideosSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-secondary/30 py-32 md:py-40">
+    <section id="videos" className="bg-secondary/30 py-32 md:py-40">
       <div ref={ref} className="mx-auto max-w-6xl px-6">
         <div className={`mb-16 text-center ${isVisible ? "animate-reveal-up" : "opacity-0"}`}>
           <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">{t("videos.label")}</p>
