@@ -23,7 +23,7 @@ const QuietMusicProjectPage = () => {
       name: "Natalia",
       role: { de: "Englischlehrerin", en: "English teacher" },
       text: {
-        de: "Sehr ungewöhnliche und angenehme Eindrücke — musikalisch und körperlich. Die erste „musikalische" Aufgabe wirkte therapeutisch — als hätte ich mit einem Psychologen gesprochen. Zwei Stunden vergingen wie im Flug.",
+        de: "Sehr ungewöhnliche und angenehme Eindrücke — musikalisch und körperlich. Die erste „musikalische\u201c Aufgabe wirkte therapeutisch — als hätte ich mit einem Psychologen gesprochen. Zwei Stunden vergingen wie im Flug.",
         en: "Very unusual and pleasant impressions — both musical and physical. The first \"musical\" task felt therapeutic — as if I had talked to a psychologist. Two hours flew by.",
       },
     },
