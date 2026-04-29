@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useLanguage, Language } from "@/contexts/LanguageContext";
 import NavMenu from "@/components/NavMenu";
 
@@ -16,10 +17,14 @@ const TopNav = () => {
   const { lang, setLang, t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState<string>("");
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 80);
+      if (!isHome) return;
       let current = "";
       for (const s of sections) {
         const el = document.getElementById(s.id);
@@ -30,11 +35,15 @@ const TopNav = () => {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [isHome]);
 
   const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    if (isHome) {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate(`/#${id}`);
+    }
   };
 
   const langOption = (code: Language, label: string) => (
@@ -60,13 +69,15 @@ const TopNav = () => {
         <div className="flex items-center gap-5">
           <NavMenu />
           <a
-            href="#top"
+            href="/"
             onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
+              if (isHome) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
             }}
             className={`font-display text-lg font-light tracking-wide transition-opacity ${
-              scrolled ? "opacity-100" : "opacity-0 pointer-events-none"
+              scrolled || !isHome ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
           >
             Natalia <span className="text-primary">Uchitel</span>
