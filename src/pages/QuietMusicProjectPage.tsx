@@ -89,6 +89,38 @@ const QuietMusicProjectPage = () => {
 
       <SectionDivider variant="line" />
 
+      {/* Video */}
+      <section className="py-24 md:py-32">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="mb-12 text-center">
+            <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
+              {t("qm.video.label")}
+            </p>
+            <h2 className="font-display text-4xl font-light md:text-5xl">
+              {t("qm.video.title")}
+            </h2>
+            <p className="font-body mt-5 max-w-2xl mx-auto text-base leading-[1.75] text-foreground/75 md:text-lg">
+              {t("qm.video.subtitle")}
+            </p>
+          </div>
+
+          <div className="relative overflow-hidden border border-border bg-secondary/20 shadow-2xl">
+            <div className="aspect-video w-full">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Quiet Music — Music Siesta"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider variant="line" />
+
       {/* How it goes */}
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-6">
