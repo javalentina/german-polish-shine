@@ -170,6 +170,54 @@ const QuietMusicProjectPage = () => {
 
       <SectionDivider variant="ornament" />
 
+      {/* Event Info — When / Where / Time / Details */}
+      <section className="py-24 md:py-32">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="mb-12">
+            <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
+              {t("qm.info.label")}
+            </p>
+            <h2 className="font-display text-4xl font-light md:text-5xl">
+              {t("qm.info.title")}
+            </h2>
+          </div>
+
+          <div className="border border-border bg-secondary/10 p-8 md:p-12">
+            <div className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { label: t("qm.info.when"), value: t("qm.info.whenValue") },
+                { label: t("qm.info.where"), value: t("qm.info.whereValue") },
+                { label: t("qm.info.time"), value: t("qm.info.timeValue") },
+                { label: t("qm.info.tickets"), value: t("qm.info.ticketsValue") },
+              ].map((item, i) => (
+                <div key={i} className="bg-background p-6 md:p-8">
+                  <p className="font-body text-[10px] tracking-[0.3em] uppercase text-primary/70">
+                    {item.label}
+                  </p>
+                  <p className="font-display mt-3 text-xl font-light leading-snug md:text-2xl">
+                    {item.value}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 flex flex-col items-start gap-6 border-t border-border pt-8 md:flex-row md:items-center md:justify-between">
+              <p className="font-body max-w-xl text-sm leading-[1.75] text-foreground/70 md:text-base">
+                {t("qm.info.note")}
+              </p>
+              <a
+                href="mailto:contact@nataliauchitel.com"
+                className="font-body inline-block border border-primary px-8 py-3 text-[11px] tracking-[0.3em] uppercase text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+              >
+                {t("qm.info.cta")}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider variant="line" />
+
       {/* Performers */}
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-6">
