@@ -215,6 +215,29 @@ const translations: Record<string, Record<Language, string>> = {
   "qm.gallery.title": { de: "Eindrücke aus dem Saal", en: "Impressions from the hall" },
   "qm.back": { de: "Zurück zu allen Projekten", en: "Back to all projects" },
 
+  // Quiet Music — video & event info
+  "qm.video.label": { de: "Eindruck", en: "Impression" },
+  "qm.video.title": { de: "Ein Abend in Bewegung und Klang", en: "An evening in motion and sound" },
+  "qm.video.subtitle": {
+    de: "Ein kurzer Einblick in eine Musik-Siesta — Atmosphäre, Klang und Stille.",
+    en: "A short glimpse into a Music Siesta — atmosphere, sound and silence.",
+  },
+  "qm.info.label": { de: "Nächste Siesta", en: "Next Siesta" },
+  "qm.info.title": { de: "Wann · Wo · Details", en: "When · Where · Details" },
+  "qm.info.when": { de: "Wann", en: "When" },
+  "qm.info.whenValue": { de: "Termin auf Anfrage", en: "Date on request" },
+  "qm.info.where": { de: "Wo", en: "Where" },
+  "qm.info.whereValue": { de: "Studio Miras, Berlin", en: "Studio Miras, Berlin" },
+  "qm.info.time": { de: "Dauer", en: "Time" },
+  "qm.info.timeValue": { de: "ca. 1,5 Stunden", en: "approx. 1.5 hours" },
+  "qm.info.tickets": { de: "Plätze", en: "Seats" },
+  "qm.info.ticketsValue": { de: "Limitiert · Reservierung empfohlen", en: "Limited · reservation recommended" },
+  "qm.info.cta": { de: "Platz reservieren", en: "Reserve a seat" },
+  "qm.info.note": {
+    de: "Schreiben Sie für aktuelle Termine und Reservierungen direkt an Natalia.",
+    en: "Write directly to Natalia for current dates and reservations.",
+  },
+
   // Footer
   "footer.rights": { de: "Alle Rechte vorbehalten.", en: "All rights reserved." },
 };
