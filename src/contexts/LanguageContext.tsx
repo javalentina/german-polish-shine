@@ -186,11 +186,17 @@ const translations: Record<string, Record<Language, string>> = {
   "qm.concept.label": { de: "Konzept", en: "Concept" },
   "qm.concept.title": { de: "Eine Pause für Körper und Gehör", en: "A pause for body and hearing" },
   "qm.concept.p1": {
-    de: "Ein echtes Konzert klassischer Musik — gespielt von Preisträgern internationaler Wettbewerbe. Statt aufrecht im Saal zu sitzen, lauschen Sie liegend auf Kissen, in eine Decke gehüllt, begleitet von einer ruhigen Bewegungspraxis.",
-    en: "A real classical concert — performed by prize-winners of international competitions. Instead of sitting upright, you listen lying down on cushions, wrapped in a blanket, guided by a calm movement practice.",
+    de: "Hatten Sie schon einmal heimlich Kindergartenkinder beneidet und sich nach einer Mittagsruhe gesehnt? Selbst in den größten finnischen Unternehmen gibt es eine Zeit, die ausdrücklich der Erholung gewidmet ist.",
+    en: "Have you ever secretly envied kindergarten children and longed for a quiet hour of your own? Even the largest Finnish companies set aside time specifically dedicated to rest.",
   },
-  "qm.concept.p2": { de: "", en: "" },
-  "qm.concept.p3": { de: "", en: "" },
+  "qm.concept.p2": {
+    de: "In unserer rastlosen Welt kämpfen wir alle mit einer Flut an Informationen, kreisenden Gedanken und stiller Unruhe. Sich auf etwas einzulassen, das Verlangsamung verlangt, fällt oft schwer.",
+    en: "In our restless world, we all wrestle with floods of information, racing thoughts and quiet anxiety. Settling into something that asks for slowness has become genuinely difficult.",
+  },
+  "qm.concept.p3": {
+    de: "Wir möchten Ihnen die Möglichkeit geben, vom Trubel abzuschalten — auf eine ungewöhnliche Weise. Auf der einen Seite ein echtes Konzert klassischer Musik, gespielt von Preisträgern internationaler Wettbewerbe, mit einem Programm, das eigens für diesen Abend zusammengestellt wurde. Auf der anderen Seite laden wir Sie in einen klassischen Saal ein — und bitten Sie, sich auf Kissen zu legen, sich in eine Decke zu hüllen und der Musik liegend zu lauschen, begleitet von einer ruhigen, entspannenden Bewegungspraxis.",
+    en: "We want to offer you a chance to step away from the noise — in an unusual way. On one hand, a real classical concert performed by prize-winners of international competitions, with a program curated specifically for this evening. On the other, we invite you into an academic concert hall and ask you to lie down on cushions, wrap yourself in a blanket, and listen while a calm, restorative movement practice unfolds.",
+  },
   "qm.flow.label": { de: "Ablauf", en: "How it unfolds" },
   "qm.flow.title": { de: "Wie der Abend verläuft", en: "What the evening looks like" },
   "qm.flow.step1.title": { de: "Ankommen", en: "Arrival" },
