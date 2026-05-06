@@ -186,13 +186,11 @@ const translations: Record<string, Record<Language, string>> = {
   "qm.concept.label": { de: "Konzept", en: "Concept" },
   "qm.concept.title": { de: "Eine Pause für Körper und Gehör", en: "A pause for body and hearing" },
   "qm.concept.p1": {
-    de: "Ein echtes Konzert klassischer Musik — gespielt von Preisträgern internationaler Wettbewerbe, mit einem Programm, das eigens für diesen Abend zusammengestellt wird.",
-    en: "A real classical concert — performed by prize-winners of international competitions, with a program curated specifically for this evening.",
+    de: "Ein echtes Konzert klassischer Musik — gespielt von Preisträgern internationaler Wettbewerbe. Statt aufrecht im Saal zu sitzen, lauschen Sie liegend auf Kissen, in eine Decke gehüllt, begleitet von einer ruhigen Bewegungspraxis.",
+    en: "A real classical concert — performed by prize-winners of international competitions. Instead of sitting upright, you listen lying down on cushions, wrapped in a blanket, guided by a calm movement practice.",
   },
-  "qm.concept.p2": {
-    de: "Statt aufrecht im Saal zu sitzen, legen Sie sich auf Kissen, hüllen sich in eine Decke und lauschen liegend — begleitet von einer ruhigen, entspannenden Bewegungspraxis.",
-    en: "Instead of sitting upright in the hall, you lie down on cushions, wrap yourself in a blanket, and listen — accompanied by a calm, restorative movement practice.",
-  },
+  "qm.concept.p2": { de: "", en: "" },
+  "qm.concept.p3": { de: "", en: "" },
   "qm.concept.p3": { de: "", en: "" },
   "qm.flow.label": { de: "Ablauf", en: "How it unfolds" },
   "qm.flow.title": { de: "Wie der Abend verläuft", en: "What the evening looks like" },
