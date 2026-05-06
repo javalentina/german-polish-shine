@@ -31,6 +31,7 @@ const translations: Record<string, Record<Language, string>> = {
   "nav.contact": { de: "Kontakt", en: "Contact" },
   "nav.follow": { de: "Folgen", en: "Follow" },
   "nav.presentation": { de: "Über mich", en: "About Me" },
+  "nav.resume": { de: "Lebenslauf", en: "Resume" },
 
   // Presentation video
   "presentation.label": { de: "Videopräsentation", en: "Video Presentation" },

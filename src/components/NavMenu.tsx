@@ -22,12 +22,17 @@ const NavMenu = () => {
     { href: "#videos", key: "nav.videos" },
     { href: "#gallery", key: "nav.gallery" },
     { href: "#projects", key: "nav.projects" },
+    { href: "/resume", key: "nav.resume" },
     { href: "#contact", key: "nav.contact" },
   ];
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setOpen(false);
+    if (href.startsWith("/")) {
+      setTimeout(() => navigate(href), 250);
+      return;
+    }
     const id = href.replace("#", "");
     if (location.pathname === "/") {
       setTimeout(() => {
