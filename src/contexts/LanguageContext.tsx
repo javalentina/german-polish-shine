@@ -124,6 +124,16 @@ const translations: Record<string, Record<Language, string>> = {
   "concert.programTitle": { de: "Werke des Abends", en: "Works of the evening" },
   "concert.impressions": { de: "Eindrücke", en: "Impressions" },
   "concert.impressionsTitle": { de: "Bilder & Atmosphäre", en: "Images & Atmosphere" },
+  "concert.when": { de: "Datum", en: "Date" },
+  "concert.time": { de: "Beginn", en: "Time" },
+  "concert.where": { de: "Ort", en: "Venue" },
+  "concert.address": { de: "Adresse", en: "Address" },
+  "concert.details": { de: "Details", en: "Details" },
+  "concert.tickets": { de: "Tickets buchen", en: "Book tickets" },
+  "concert.programDownload": { de: "Programm öffnen", en: "View programme" },
+  "concert.about": { de: "Über das Konzert", en: "About the concert" },
+  "concert.videos": { de: "Videos", en: "Videos" },
+  "concert.videosTitle": { de: "Aufzeichnungen", en: "Recordings" },
 
   // Videos
   "videos.label": { de: "Aufnahmen", en: "Recordings" },
