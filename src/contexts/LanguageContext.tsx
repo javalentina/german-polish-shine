@@ -186,17 +186,14 @@ const translations: Record<string, Record<Language, string>> = {
   "qm.concept.label": { de: "Konzept", en: "Concept" },
   "qm.concept.title": { de: "Eine Pause für Körper und Gehör", en: "A pause for body and hearing" },
   "qm.concept.p1": {
-    de: "In unserer hektischen Welt müssen wir alle riesige Informationsströme, kreisende Gedanken und latente Unruhe bewältigen. Sich auf etwas einzulassen, das Verlangsamung verlangt, fällt zunehmend schwer.",
-    en: "In our restless world, we all have to navigate vast streams of information, racing thoughts and quiet anxiety. Settling into something that asks for slowness has become genuinely difficult.",
+    de: "Ein echtes Konzert klassischer Musik — gespielt von Preisträgern internationaler Wettbewerbe, mit einem Programm, das eigens für diesen Abend zusammengestellt wird.",
+    en: "A real classical concert — performed by prize-winners of international competitions, with a program curated specifically for this evening.",
   },
   "qm.concept.p2": {
-    de: "Auf der einen Seite erwartet Sie ein echtes Konzert klassischer Musik — gespielt von Preisträgern internationaler Wettbewerbe, mit einem Programm, das eigens für diesen Abend zusammengestellt wurde.",
-    en: "On one hand, a real classical concert awaits you — performed by prize-winners of international competitions, with a program curated specifically for this evening.",
+    de: "Statt aufrecht im Saal zu sitzen, legen Sie sich auf Kissen, hüllen sich in eine Decke und lauschen liegend — begleitet von einer ruhigen, entspannenden Bewegungspraxis.",
+    en: "Instead of sitting upright in the hall, you lie down on cushions, wrap yourself in a blanket, and listen — accompanied by a calm, restorative movement practice.",
   },
-  "qm.concept.p3": {
-    de: "Auf der anderen Seite laden wir Sie in einen klassischen Saal ein, in dem normalerweise stilles, aufrechtes Zuhören erwartet wird — und bitten Sie, sich auf Kissen zu legen, in eine Decke zu hüllen und der Musik liegend zu lauschen, begleitet von einer ruhigen, entspannenden Bewegungspraxis.",
-    en: "On the other, we invite you into an academic concert hall — where one normally sits in formal silence — and ask you instead to lie down on cushions, wrap yourself in a blanket, and listen while a calm, restorative movement practice unfolds.",
-  },
+  "qm.concept.p3": { de: "", en: "" },
   "qm.flow.label": { de: "Ablauf", en: "How it unfolds" },
   "qm.flow.title": { de: "Wie der Abend verläuft", en: "What the evening looks like" },
   "qm.flow.step1.title": { de: "Ankommen", en: "Arrival" },
