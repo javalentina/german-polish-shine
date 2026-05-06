@@ -9,13 +9,19 @@ export type Concert = {
   id: string;
   date: string; // display date
   isoDate: string; // for sorting
+  time?: string; // e.g. "19:30"
   city: string;
   venue: string;
+  address?: { de: string; en: string };
+  details?: { de: string; en: string }; // short note: dress code, special info, etc.
   upcoming: boolean;
   program?: { de: string; en: string }[];
   description?: { de: string; en: string };
   image?: string;
   gallery?: string[];
+  videos?: { youtubeId: string; title?: { de: string; en: string } }[];
+  ticketUrl?: string;
+  programUrl?: string; // PDF / external programme link
 };
 
 export const concerts: Concert[] = [
@@ -23,8 +29,17 @@ export const concerts: Concert[] = [
     id: "2026-03-12-st-petersburg-philharmonic",
     date: "12. März 2026",
     isoDate: "2026-03-12",
+    time: "19:30",
     city: "Sankt-Petersburg",
     venue: "Philharmonic Hall",
+    address: {
+      de: "Mikhailovskaya St. 2, Sankt-Petersburg",
+      en: "Mikhailovskaya St. 2, St. Petersburg",
+    },
+    details: {
+      de: "Großer Saal · Solorezital · Pause nach dem zweiten Werk",
+      en: "Great Hall · Solo recital · Intermission after the second work",
+    },
     upcoming: true,
     image: concertHall,
     description: {
@@ -37,13 +52,23 @@ export const concerts: Concert[] = [
       { de: "L. Desyatnikov — Sketches to Sunset", en: "L. Desyatnikov — Sketches to Sunset" },
     ],
     gallery: [gallery1, gallery2, gallery3],
+    ticketUrl: "https://www.philharmonia.spb.ru/en/",
   },
   {
     id: "2026-02-09-st-petersburg-myasnikov",
     date: "9. Februar 2026",
     isoDate: "2026-02-09",
+    time: "19:00",
     city: "Sankt-Petersburg",
     venue: "Myasnikov Mansion",
+    address: {
+      de: "Vostaniya St. 45, Sankt-Petersburg",
+      en: "Vostaniya St. 45, St. Petersburg",
+    },
+    details: {
+      de: "Kammermusiksaal · Begrenzte Platzzahl",
+      en: "Chamber hall · Limited seating",
+    },
     upcoming: true,
     image: piano,
     description: {
@@ -55,8 +80,13 @@ export const concerts: Concert[] = [
     id: "2026-02-02-duisburg-folkwang",
     date: "2. Februar 2026",
     isoDate: "2026-02-02",
+    time: "19:30",
     city: "Duisburg",
     venue: "Folkwang Universität der Künste",
+    address: {
+      de: "Klemensborn 39, 45239 Essen",
+      en: "Klemensborn 39, 45239 Essen",
+    },
     upcoming: true,
     image: heroPiano,
     description: {
@@ -68,8 +98,10 @@ export const concerts: Concert[] = [
     id: "2026-01-07-vienna-brahms",
     date: "7. Januar 2026",
     isoDate: "2026-01-07",
+    time: "20:00",
     city: "Wien",
     venue: "Brahms-Salon",
+    address: { de: "Musikverein, Wien", en: "Musikverein, Vienna" },
     upcoming: true,
     image: concertHall,
     description: {
@@ -85,6 +117,7 @@ export const concerts: Concert[] = [
     venue: "Haus der Dichter",
     upcoming: false,
     image: piano,
+    videos: [{ youtubeId: "dQw4w9WgXcQ" }],
   },
   {
     id: "2025-12-04-hamburg-lmn",
