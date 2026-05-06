@@ -258,12 +258,16 @@ const translations: Record<string, Record<Language, string>> = {
   "qm.hero.ctaSecondary": { de: "Mehr erfahren", en: "Learn more" },
   "qm.final.label": { de: "Bereit?", en: "Ready?" },
   "qm.final.title": {
-    de: "Erleben Sie eine Siesta für Körper und Gehör",
-    en: "Experience a siesta for body and hearing",
+    de: "Sichern Sie sich Ihren Platz",
+    en: "Reserve your seat",
   },
   "qm.final.subtitle": {
-    de: "Plätze sind limitiert. Reservieren Sie Ihren Platz bei der nächsten Music-Siesta.",
-    en: "Seats are limited. Reserve your spot at the next Music-Siesta.",
+    de: "Die Plätze sind streng limitiert — wir arbeiten in kleinen Gruppen, damit jeder Gast Raum, Decke und Aufmerksamkeit bekommt.",
+    en: "Seats are strictly limited — we work in small groups so every guest gets space, a blanket and full attention.",
+  },
+  "qm.final.urgency": {
+    de: "Nur wenige Plätze · Reservierung erforderlich",
+    en: "Few seats remaining · reservation required",
   },
 
   // Partner

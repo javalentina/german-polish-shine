@@ -190,55 +190,86 @@ const QuietMusicProjectPage = () => {
 
       <SectionDivider variant="ornament" />
 
-      {/* Event Info — When / Where / Time / Details */}
+      {/* Performers */}
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-6">
-          <div className="mb-12">
-            <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
-              {t("qm.info.label")}
-            </p>
-            <h2 className="font-display text-4xl font-light md:text-5xl">
-              {t("qm.info.title")}
-            </h2>
-          </div>
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
+            {t("qm.performers.label")}
+          </p>
+          <h2 className="font-display text-4xl font-light mb-16 md:text-5xl">
+            {t("qm.performers.title")}
+          </h2>
 
-          <div className="border border-border bg-secondary/10 p-8 md:p-12">
-            <div className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
-              {[
-                { label: t("qm.info.when"), value: t("qm.info.whenValue") },
-                { label: t("qm.info.where"), value: t("qm.info.whereValue") },
-                { label: t("qm.info.time"), value: t("qm.info.timeValue") },
-                { label: t("qm.info.tickets"), value: t("qm.info.ticketsValue") },
-              ].map((item, i) => (
-                <div key={i} className="bg-background p-6 md:p-8">
-                  <p className="font-body text-[10px] tracking-[0.3em] uppercase text-primary/70">
-                    {item.label}
-                  </p>
-                  <p className="font-display mt-3 text-xl font-light leading-snug md:text-2xl">
-                    {item.value}
-                  </p>
+          <div className="grid gap-12 sm:grid-cols-3">
+            {performers.map((p) => (
+              <div key={p.name} className="text-center">
+                <div className="mx-auto mb-6 h-32 w-32 overflow-hidden rounded-full border border-primary/20">
+                  <img src={piano} alt="" className="h-full w-full object-cover" />
                 </div>
-              ))}
-            </div>
-
-            <div className="mt-10 flex flex-col items-start gap-6 border-t border-border pt-8 md:flex-row md:items-center md:justify-between">
-              <p className="font-body max-w-xl text-sm leading-[1.75] text-foreground/70 md:text-base">
-                {t("qm.info.note")}
-              </p>
-              <a
-                href="mailto:contact@nataliauchitel.com"
-                className="font-body inline-block border border-primary px-8 py-3 text-[11px] tracking-[0.3em] uppercase text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
-              >
-                {t("qm.info.cta")}
-              </a>
-            </div>
+                <h3 className="font-display text-2xl font-light">{p.name}</h3>
+                <p className="font-body mt-2 text-sm tracking-[0.15em] uppercase text-primary/80">
+                  {p.role[lang]}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <SectionDivider variant="line" />
 
-      {/* Partner */}
+      {/* Testimonials — Social proof */}
+      <section className="py-24 md:py-32">
+        <div className="mx-auto max-w-5xl px-6">
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4 text-center">
+            {t("qm.reviews.label")}
+          </p>
+          <h2 className="font-display text-4xl font-light mb-16 md:text-5xl text-center">
+            {t("qm.reviews.title")}
+          </h2>
+
+          <div className="space-y-12">
+            {testimonials.map((tst, i) => (
+              <figure key={i} className="border-l-2 border-primary/40 pl-8 md:pl-12">
+                <blockquote className="font-display text-xl font-light italic leading-relaxed text-foreground/90 md:text-2xl">
+                  „{tst.text[lang]}"
+                </blockquote>
+                <figcaption className="mt-6 flex items-baseline gap-4">
+                  <span className="font-display text-lg">{tst.name}</span>
+                  <span className="font-body text-xs tracking-[0.2em] uppercase text-primary/70">
+                    {tst.role[lang]}
+                  </span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider variant="ornament" />
+
+      {/* Gallery */}
+      <section className="py-24 md:py-32">
+        <div className="mx-auto max-w-5xl px-6">
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
+            {t("qm.gallery.label")}
+          </p>
+          <h2 className="font-display text-4xl font-light mb-12 md:text-5xl">
+            {t("qm.gallery.title")}
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+            {[gallery1, gallery2, gallery3, concertHall, piano, gallery1].map((src, i) => (
+              <div key={i} className="overflow-hidden">
+                <img src={src} alt="" className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider variant="line" />
+
+      {/* Partner — Trust */}
       <section className="py-24 md:py-32 bg-secondary/10">
         <div className="mx-auto max-w-5xl px-6">
           <div className="grid gap-12 md:grid-cols-[1fr_2fr] md:gap-16 items-start">
@@ -270,120 +301,71 @@ const QuietMusicProjectPage = () => {
         </div>
       </section>
 
-      <SectionDivider variant="line" />
+      <SectionDivider variant="ornament" />
 
-      {/* Performers */}
-      <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-5xl px-6">
-          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
-            {t("qm.performers.label")}
+      {/* CONVERSION — Event details + final CTA, the funnel narrows here */}
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <img src={concertHall} alt="" className="absolute inset-0 h-full w-full object-cover opacity-15" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+
+        <div className="relative mx-auto max-w-4xl px-6 text-center">
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-6">
+            {t("qm.final.label")}
           </p>
-          <h2 className="font-display text-4xl font-light mb-16 md:text-5xl">
-            {t("qm.performers.title")}
+          <h2 className="font-display text-4xl font-light leading-tight md:text-6xl mb-6 text-balance">
+            {t("qm.final.title")}
           </h2>
+          <p className="font-body max-w-xl mx-auto text-base leading-[1.75] text-foreground/75 md:text-lg mb-12">
+            {t("qm.final.subtitle")}
+          </p>
 
-          <div className="grid gap-12 sm:grid-cols-3">
-            {performers.map((p) => (
-              <div key={p.name} className="text-center">
-                <div className="mx-auto mb-6 h-32 w-32 overflow-hidden rounded-full border border-primary/20">
-                  <img src={piano} alt="" className="h-full w-full object-cover" />
-                </div>
-                <h3 className="font-display text-2xl font-light">{p.name}</h3>
-                <p className="font-body mt-2 text-sm tracking-[0.15em] uppercase text-primary/80">
-                  {p.role[lang]}
+          {/* Event facts — at-a-glance */}
+          <div className="mb-10 grid gap-px bg-border border border-border sm:grid-cols-2 lg:grid-cols-4 text-left">
+            {[
+              { label: t("qm.info.when"), value: t("qm.info.whenValue") },
+              { label: t("qm.info.where"), value: t("qm.info.whereValue") },
+              { label: t("qm.info.time"), value: t("qm.info.timeValue") },
+              { label: t("qm.info.tickets"), value: t("qm.info.ticketsValue") },
+            ].map((item, i) => (
+              <div key={i} className="bg-background p-6">
+                <p className="font-body text-[10px] tracking-[0.3em] uppercase text-primary/70">
+                  {item.label}
+                </p>
+                <p className="font-display mt-2 text-lg font-light leading-snug md:text-xl">
+                  {item.value}
                 </p>
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      <SectionDivider variant="line" />
-
-      {/* Testimonials */}
-      <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-5xl px-6">
-          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4 text-center">
-            {t("qm.reviews.label")}
+          {/* Urgency line */}
+          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary/80 mb-8">
+            ◆ {t("qm.final.urgency")} ◆
           </p>
-          <h2 className="font-display text-4xl font-light mb-16 md:text-5xl text-center">
-            {t("qm.reviews.title")}
-          </h2>
 
-          <div className="space-y-12">
-            {testimonials.map((tst, i) => (
-              <figure
-                key={i}
-                className="border-l-2 border-primary/40 pl-8 md:pl-12"
-              >
-                <blockquote className="font-display text-xl font-light italic leading-relaxed text-foreground/90 md:text-2xl">
-                  „{tst.text[lang]}"
-                </blockquote>
-                <figcaption className="mt-6 flex items-baseline gap-4">
-                  <span className="font-display text-lg">{tst.name}</span>
-                  <span className="font-body text-xs tracking-[0.2em] uppercase text-primary/70">
-                    {tst.role[lang]}
-                  </span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery */}
-      <SectionDivider variant="ornament" />
-      <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-5xl px-6">
-          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
-            {t("qm.gallery.label")}
-          </p>
-          <h2 className="font-display text-4xl font-light mb-12 md:text-5xl">
-            {t("qm.gallery.title")}
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-            {[gallery1, gallery2, gallery3, concertHall, piano, gallery1].map((src, i) => (
-              <div key={i} className="overflow-hidden">
-                <img src={src} alt="" className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider variant="ornament" />
-
-      {/* Final CTA */}
-      <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-6">
-            {t("qm.final.label")}
-          </p>
-          <h2 className="font-display text-4xl font-light leading-tight md:text-5xl mb-6">
-            {t("qm.final.title")}
-          </h2>
-          <p className="font-body max-w-xl mx-auto text-base leading-[1.75] text-foreground/75 md:text-lg mb-10">
-            {t("qm.final.subtitle")}
-          </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:contact@nataliauchitel.com"
-              className="font-body inline-block bg-primary px-8 py-4 text-[11px] tracking-[0.3em] uppercase text-primary-foreground transition-colors hover:bg-primary/90"
+              href="mailto:contact@nataliauchitel.com?subject=Music Siesta — Reservierung"
+              className="font-body inline-block bg-primary px-10 py-4 text-[11px] tracking-[0.3em] uppercase text-primary-foreground transition-colors hover:bg-primary/90"
             >
               {t("qm.cta.reserve")}
             </a>
             <a
               href="mailto:contact@nataliauchitel.com?subject=Music Siesta — Frage"
-              className="font-body inline-block border border-primary px-8 py-4 text-[11px] tracking-[0.3em] uppercase text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="font-body inline-block border border-primary px-10 py-4 text-[11px] tracking-[0.3em] uppercase text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               {t("qm.cta.ask")}
             </a>
           </div>
+
+          <p className="font-body mt-10 text-sm leading-[1.75] text-foreground/60 max-w-md mx-auto">
+            {t("qm.info.note")}
+          </p>
         </div>
       </section>
 
       {/* Back */}
-      <section className="pb-32">
+      <section className="pb-24">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <Link
             to="/#projects"
