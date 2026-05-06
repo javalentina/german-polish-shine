@@ -63,13 +63,27 @@ const QuietMusicProjectPage = () => {
           <p className="font-display mt-8 max-w-2xl text-2xl font-light italic text-foreground/80 md:text-3xl">
             {t("qm.subtitle")}
           </p>
+          <div className="mt-12 flex flex-wrap gap-4">
+            <a
+              href="mailto:contact@nataliauchitel.com"
+              className="font-body inline-block bg-primary px-8 py-4 text-[11px] tracking-[0.3em] uppercase text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              {t("qm.hero.cta")}
+            </a>
+            <a
+              href="#concept"
+              className="font-body inline-block border border-primary px-8 py-4 text-[11px] tracking-[0.3em] uppercase text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              {t("qm.hero.ctaSecondary")}
+            </a>
+          </div>
         </div>
       </section>
 
       <SectionDivider variant="ornament" />
 
       {/* Concept */}
-      <section className="py-24 md:py-32">
+      <section id="concept" className="py-24 md:py-32">
         <div className="mx-auto grid max-w-6xl gap-16 px-6 md:grid-cols-2 md:gap-20">
           <div>
             <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
@@ -83,6 +97,12 @@ const QuietMusicProjectPage = () => {
             <p>{t("qm.concept.p1")}</p>
             <p>{t("qm.concept.p2")}</p>
             <p>{t("qm.concept.p3")}</p>
+            <a
+              href="mailto:contact@nataliauchitel.com"
+              className="font-body inline-block mt-4 border-b border-primary/40 pb-1 text-[11px] tracking-[0.3em] uppercase text-primary transition-colors hover:border-primary"
+            >
+              {t("qm.cta.join")} →
+            </a>
           </div>
         </div>
       </section>
