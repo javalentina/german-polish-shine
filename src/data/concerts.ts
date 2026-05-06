@@ -117,6 +117,7 @@ export const concerts: Concert[] = [
     venue: "Haus der Dichter",
     upcoming: false,
     image: piano,
+    gallery: [gallery1, gallery2, gallery3],
     videos: [{ youtubeId: "dQw4w9WgXcQ" }],
   },
   {
@@ -127,6 +128,7 @@ export const concerts: Concert[] = [
     venue: "LMN Concert",
     upcoming: false,
     image: heroPiano,
+    gallery: [gallery2, gallery3],
   },
   {
     id: "2025-09-21-luebeck-brahms",
@@ -136,6 +138,8 @@ export const concerts: Concert[] = [
     venue: "Brahms Institut",
     upcoming: false,
     image: concertHall,
+    gallery: [gallery1, gallery3],
+    videos: [{ youtubeId: "dQw4w9WgXcQ" }],
   },
 ];
 
