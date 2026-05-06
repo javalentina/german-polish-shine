@@ -191,7 +191,6 @@ const translations: Record<string, Record<Language, string>> = {
   },
   "qm.concept.p2": { de: "", en: "" },
   "qm.concept.p3": { de: "", en: "" },
-  "qm.concept.p3": { de: "", en: "" },
   "qm.flow.label": { de: "Ablauf", en: "How it unfolds" },
   "qm.flow.title": { de: "Wie der Abend verläuft", en: "What the evening looks like" },
   "qm.flow.step1.title": { de: "Ankommen", en: "Arrival" },
