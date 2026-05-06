@@ -96,7 +96,7 @@ const QuietMusicProjectPage = () => {
           <div className="space-y-6 font-body text-lg leading-[1.8] text-foreground/85">
             <p>{t("qm.concept.p1")}</p>
             <p>{t("qm.concept.p2")}</p>
-            <p>{t("qm.concept.p3")}</p>
+            {t("qm.concept.p3") && <p>{t("qm.concept.p3")}</p>}
             <a
               href="mailto:contact@nataliauchitel.com"
               className="font-body inline-block mt-4 border-b border-primary/40 pb-1 text-[11px] tracking-[0.3em] uppercase text-primary transition-colors hover:border-primary"
