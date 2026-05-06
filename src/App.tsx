@@ -8,6 +8,7 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import ConcertDetailPage from "./pages/ConcertDetailPage.tsx";
 import QuietMusicProjectPage from "./pages/QuietMusicProjectPage.tsx";
+import ResumePage from "./pages/ResumePage.tsx";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/concerts/:id" element={<ConcertDetailPage />} />
             <Route path="/projects/quiet-music" element={<QuietMusicProjectPage />} />
+            <Route path="/resume" element={<ResumePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
