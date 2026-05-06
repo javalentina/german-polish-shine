@@ -8,6 +8,7 @@ import VideosSection from "@/components/VideosSection";
 import GallerySection from "@/components/GallerySection";
 import ProjectsSection from "@/components/ProjectsSection";
 import PresentationSection from "@/components/PresentationSection";
+import ContactSection from "@/components/ContactSection";
 import FooterSection from "@/components/FooterSection";
 import TopNav from "@/components/TopNav";
 import SectionDivider from "@/components/SectionDivider";
@@ -42,6 +43,8 @@ const Index = () => {
       <GallerySection />
       <SectionDivider variant="ornament" />
       <ProjectsSection />
+      <SectionDivider variant="line" />
+      <ContactSection />
       <FooterSection />
     </main>
   );
