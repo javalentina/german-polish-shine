@@ -115,6 +115,7 @@ const translations: Record<string, Record<Language, string>> = {
   "concerts.past": { de: "Vergangene Konzerte", en: "Past Concerts" },
   "concerts.show": { de: "Anzeigen", en: "Show" },
   "concerts.hide": { de: "Verbergen", en: "Hide" },
+  "concerts.video": { de: "Video", en: "Video" },
 
   // Concert detail
   "concert.notFound": { de: "Konzert nicht gefunden", en: "Concert not found" },
