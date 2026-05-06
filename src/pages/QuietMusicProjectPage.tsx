@@ -238,6 +238,40 @@ const QuietMusicProjectPage = () => {
 
       <SectionDivider variant="line" />
 
+      {/* Partner */}
+      <section className="py-24 md:py-32 bg-secondary/10">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="grid gap-12 md:grid-cols-[1fr_2fr] md:gap-16 items-start">
+            <div>
+              <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
+                {t("qm.partnerBlock.label")}
+              </p>
+              <h2 className="font-display text-4xl font-light leading-tight md:text-5xl">
+                {t("qm.partnerBlock.title")}
+              </h2>
+            </div>
+            <div className="space-y-6 font-body text-lg leading-[1.8] text-foreground/85">
+              <p>{t("qm.partnerBlock.intro")}</p>
+              <p className="font-display text-2xl italic font-light text-foreground/90">
+                {t("qm.partnerBlock.question")}
+              </p>
+              <p>{t("qm.partnerBlock.p1")}</p>
+              <p>{t("qm.partnerBlock.p2")}</p>
+              <a
+                href="https://www.instagram.com/miras.studio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-body inline-block mt-4 border border-primary px-8 py-3 text-[11px] tracking-[0.3em] uppercase text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+              >
+                {t("qm.partnerBlock.cta")}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider variant="line" />
+
       {/* Performers */}
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-6">
