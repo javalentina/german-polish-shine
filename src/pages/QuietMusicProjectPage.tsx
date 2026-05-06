@@ -351,6 +351,37 @@ const QuietMusicProjectPage = () => {
         </div>
       </section>
 
+      <SectionDivider variant="ornament" />
+
+      {/* Final CTA */}
+      <section className="py-24 md:py-32">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-6">
+            {t("qm.final.label")}
+          </p>
+          <h2 className="font-display text-4xl font-light leading-tight md:text-5xl mb-6">
+            {t("qm.final.title")}
+          </h2>
+          <p className="font-body max-w-xl mx-auto text-base leading-[1.75] text-foreground/75 md:text-lg mb-10">
+            {t("qm.final.subtitle")}
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="mailto:contact@nataliauchitel.com"
+              className="font-body inline-block bg-primary px-8 py-4 text-[11px] tracking-[0.3em] uppercase text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              {t("qm.cta.reserve")}
+            </a>
+            <a
+              href="mailto:contact@nataliauchitel.com?subject=Music Siesta — Frage"
+              className="font-body inline-block border border-primary px-8 py-4 text-[11px] tracking-[0.3em] uppercase text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              {t("qm.cta.ask")}
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Back */}
       <section className="pb-32">
         <div className="mx-auto max-w-3xl px-6 text-center">
