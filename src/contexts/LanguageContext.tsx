@@ -250,6 +250,46 @@ const translations: Record<string, Record<Language, string>> = {
     en: "Write directly to Natalia for current dates and reservations.",
   },
 
+  // CTAs
+  "qm.cta.reserve": { de: "Platz reservieren", en: "Reserve a seat" },
+  "qm.cta.ask": { de: "Frage stellen", en: "Ask a question" },
+  "qm.cta.join": { de: "An der nächsten Siesta teilnehmen", en: "Join the next Siesta" },
+  "qm.hero.cta": { de: "Jetzt anmelden", en: "Sign up now" },
+  "qm.hero.ctaSecondary": { de: "Mehr erfahren", en: "Learn more" },
+  "qm.final.label": { de: "Bereit?", en: "Ready?" },
+  "qm.final.title": {
+    de: "Erleben Sie eine Siesta für Körper und Gehör",
+    en: "Experience a siesta for body and hearing",
+  },
+  "qm.final.subtitle": {
+    de: "Plätze sind limitiert. Reservieren Sie Ihren Platz bei der nächsten Music-Siesta.",
+    en: "Seats are limited. Reserve your spot at the next Music-Siesta.",
+  },
+
+  // Partner
+  "qm.partnerBlock.label": { de: "Partner", en: "Partner" },
+  "qm.partnerBlock.title": {
+    de: "Gemeinsam mit Studio Miras",
+    en: "Together with Studio Miras",
+  },
+  "qm.partnerBlock.intro": {
+    de: "Wir gestalten dieses Programm gemeinsam mit dem Studio für humanen Sport „Miras\".",
+    en: "We run this programme together with the studio for humane sport \"Miras\".",
+  },
+  "qm.partnerBlock.question": {
+    de: "Was macht diese Übungen besonders?",
+    en: "What makes these sessions special?",
+  },
+  "qm.partnerBlock.p1": {
+    de: "Wir trainieren mit höchster Aufmerksamkeit für den ganzen Organismus und mit besonderer Sorgfalt für die Wirbelsäule. Wir lernen unseren Körper kennen und ihn zu führen — um sicher und mit Qualität zu trainieren.",
+    en: "We train with the utmost attention to the whole body and with special care for the spine. We get to know our body and learn to guide it — so that training is safe and of high quality.",
+  },
+  "qm.partnerBlock.p2": {
+    de: "Wir formen Bewegungsgewohnheiten neu, aktivieren schlafende Muskeln und verbessern Beweglichkeit und Gelenkmobilität sanft und sicher — durch die Arbeit mit den Muskeln.",
+    en: "We reshape movement habits, activate dormant muscles, and improve flexibility and joint mobility gently and safely — through working with the muscles.",
+  },
+  "qm.partnerBlock.cta": { de: "Studio Miras besuchen", en: "Visit Studio Miras" },
+
   // Footer
   "footer.rights": { de: "Alle Rechte vorbehalten.", en: "All rights reserved." },
 };
